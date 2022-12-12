@@ -145,9 +145,9 @@ namespace Jellyfin.Plugin.MetaShark.Providers
                 result.HasMetadata = true;
                 subject.LimitDirectorCelebrities.Take(this.config.MaxCastMembers).ToList().ForEach(c => result.AddPerson(new PersonInfo
                 {
-                    Name = c.Name,
-                    Type = c.RoleType,
-                    Role = c.Role,
+                    Name = c.Name == "" ? "未知" : c.Name,
+                    Type = c.RoleType == "" ? "未知" : c.RoleType,
+                    Role = c.Role == "" ? "未知" : c.Role,
                     ImageUrl = c.Img,
                     ProviderIds = new Dictionary<string, string> { { DoubanProviderId, c.Id } },
                 }));
