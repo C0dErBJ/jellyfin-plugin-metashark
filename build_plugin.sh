@@ -10,10 +10,10 @@ WORK_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 ARTIFACT_ZIP_FILE="${WORK_DIR}/artifacts/artifacts.zip"
 ARTIFACT_META="${WORK_DIR}/build.meta.json"
 
-JELLYFIN_REPO_URL="https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download"
+JELLYFIN_REPO_URL="https://github.com/C0dErBJ/jellyfin-plugin-metashark/releases/download"
 JELLYFIN_MANIFEST="${WORK_DIR}/manifest.json"
 JELLYFIN_MANIFEST_CN="${WORK_DIR}/manifest_cn.json"
-JELLYFIN_MANIFEST_OLD="https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest.json"
+JELLYFIN_MANIFEST_OLD="https://github.com/C0dErBJ/jellyfin-plugin-metashark/releases/download/manifest/manifest.json"
 
 # download old manifest
 wget -q -O "$JELLYFIN_MANIFEST" "$JELLYFIN_MANIFEST_OLD"
