@@ -40,4 +40,10 @@
     <None Include="Vendor\TMDbLib\TMDbLib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Parser\dict.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
